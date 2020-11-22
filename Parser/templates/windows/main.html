@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{%block content%}
+<div class="container">
+    {%for elem in links%}
+    <div class="item">
+        <div>
+            <a class="habr__href" target="_blank" href="{{elem.1}}">
+                <div class="item-title">
+                    {{elem.0}}
+                </div>
+            </a>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+{%endblock content%}
